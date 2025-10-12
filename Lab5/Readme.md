@@ -1,4 +1,4 @@
-#Данные
+# Данные
 Данные можно посмотреть по ссылке https://drive.google.com/drive/folders/14vH-rAhDm1_gBRQRBAD1GtfKzdLuo-ga?usp=sharing
 ## Папка Food_Data
 Содержит наборы данных по трём классам: пицца, багеты и яблоки, в каждом классе по 101 картинке.
