@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -22,19 +22,14 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-class CustomerDataset(Dataset):
-    def __init__(self, features, labels):
-        self.features = torch.FloatTensor(features)
-        self.labels = torch.LongTensor(labels)
-    
-    def __len__(self):
-        return len(self.features)
-    
-    def __getitem__(self, idx):
-        return self.features[idx], self.labels[idx]
-
-train_dataset = CustomerDataset(X_train_scaled, y_train)
-test_dataset = CustomerDataset(X_test_scaled, y_test)
+train_dataset = TensorDataset(
+    torch.FloatTensor(X_train_scaled), 
+    torch.LongTensor(y_train)
+)
+test_dataset = TensorDataset(
+    torch.FloatTensor(X_test_scaled), 
+    torch.LongTensor(y_test)
+)
 
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
