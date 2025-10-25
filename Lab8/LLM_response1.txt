@@ -1,0 +1,8 @@
+```json
+{
+    "gradient_explosion_year": "1999",
+    "destroying_derivative_author": "Henry J. Kelley",
+    "chain_rule_author": "Gottfried Wilhelm Leibniz",
+    "chain_rule_year": "1673"
+}
+```

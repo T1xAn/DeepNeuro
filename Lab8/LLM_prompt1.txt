@@ -1,0 +1,52 @@
+Инструкции:
+1. Отвечай ТОЛЬКО на основе информации из предоставленного текста
+2. Если информация не найдена, так и напиши
+3. Будь точным в датах и именах
+4. Используй формат JSON для ответа
+
+ТЕКСТ ДЛЯ АНАЛИЗА:
+Wikipedia https://en.m.wikipedia.org/wiki/Neural_network_(machine_learning)
+Neural network (machine learning)
+
+  
+This article is about the computational models used for artificial intelligence. For other uses, see Neural network (disambiguation).
+
+Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer) to the last layer (the output layer), possibly passing through multiple intermediate layers (hidden layers). A network is typically called a deep neural network if it has at least two hidden layers.[3]
+
+Artificial neural networks are used for various tasks, including predictive modeling, adaptive control, and solving problems in artificial intelligence. They can learn from experience, and can derive conclusions from a complex and seemingly unrelated set of information.
+
+The first perceptrons did not have adaptive hidden units. However, Joseph (1960)[22] also discussed multilayer perceptrons with an adaptive hidden layer. Rosenblatt (1962)[24]:?section 16? cited and adopted these ideas, also crediting work by H. D. Block and B. W. Knight. 
+
+Fundamental research was conducted on ANNs in the 1960s and 1970s. The first working deep learning algorithm was the Group method of data handling, a method to train arbitrarily deep neural networks, published by Alexey Ivakhnenko and Lapa in the Soviet Union (1965). They regarded it as a form of polynomial regression,[25] or a generalization of Rosenblatt's perceptron.[26] A 1971 paper described a deep network with eight layers trained by this method,[27] which is based on layer by layer training through regression analysis. Superfluous hidden units are pruned using a separate validation set. Since the activation functions of the nodes are Kolmogorov-Gabor polynomials, these were also the first deep networks with multiplicative units or "gates."[10]
+
+The first deep learning multilayer perceptron trained by stochastic gradient descent[28] was published in 1967 by Shun'ichi Amari.[29] In computer experiments conducted by Amari's student Saito, a five layer MLP with two modifiable layers learned internal representations to classify non-linearily separable pattern classes.[10] Subsequent developments in hardware and hyperparameter tunings have made end-to-end stochastic gradient descent the currently dominant training technique.
+
+In 1976 transfer learning was introduced in neural networks learning.[34][35]
+
+Backpropagation is an efficient application of the chain rule derived by Gottfried Wilhelm Leibniz in 1673[39] to networks of differentiable nodes. The terminology "back-propagating errors" was actually introduced in 1962 by Rosenblatt,[24] but he did not know how to implement this, although Henry J. Kelley had a continuous precursor of backpropagation in 1960 in the context of control theory.[40] In 1970, Seppo Linnainmaa published the modern form of backpropagation in his Master's thesis (1970).[41][42][10] G.M. Ostrovski et al. republished it in 1971.[43][44] Paul Werbos applied backpropagation to neural networks in 1982[45][46] (his 1974 PhD thesis, reprinted in a 1994 book,[47] did not yet describe the algorithm[44]). In 1986, David E. Rumelhart et al. popularised backpropagation but did not cite the original work.[48]
+Convolutional neural networks
+edit
+
+From 1988 onward,[58][59] the use of neural networks transformed the field of protein structure prediction, in particular when the first cascading networks were trained on profiles (matrices) produced by multiple sequence alignments.[60]
+One origin of RNN was statistical mechanics. In 1972, Shun'ichi Amari proposed to modify the weights of an Ising model by Hebbian learning rule as a model of associative memory, adding in the component of learning.[61] This was popularized as the Hopfield network by John Hopfield (1982).[62] Another origin of RNN was neuroscience. The word "recurrent" is used to describe loop-like structures in anatomy. In 1901, Cajal observed "recurrent semicircles" in the cerebellar cortex.[63] Hebb considered "reverberating circuit" as an explanation for short-term memory.[64] The McCulloch and Pitts paper (1943) considered neural networks that contain cycles, and noted that the current activity of such networks can be affected by activity indefinitely far in the past.[12]
+
+In 1982 a recurrent neural network with an array architecture (rather than a multilayer perceptron architecture), namely a Crossbar Adaptive Array,[65][66] used direct recurrent connections from the output to the supervisor (teaching) inputs. In addition of computing actions (decisions), it computed internal state evaluations (emotions) of the consequence situations. Eliminating the external supervisor, it introduced the self-learning method in neural networks.
+
+In 1991, Sepp Hochreiter's diploma thesis[73] identified and analyzed the vanishing gradient problem[73][74] and proposed recurrent residual connections to solve it. He and Schmidhuber introduced long short-term memory (LSTM), which set accuracy records in multiple applications domains.[75][76] This was not yet the modern version of LSTM, which required the forget gate, which was introduced in 1999.[77] It became the default choice for RNN architecture.
+
+Between 2009 and 2012, ANNs began winning prizes in image recognition contests, approaching human level performance on various tasks, initially in pattern recognition and handwriting recognition.[82][83] In 2011, a CNN named DanNet[84][85] by Dan Ciresan, Ueli Meier, Jonathan Masci, Luca Maria Gambardella, and Jurgen Schmidhuber achieved for the first time superhuman performance in a visual pattern recognition contest, outperforming traditional methods by a factor of 3.[38] It then won more contests.[86][87] They also showed how max-pooling CNNs on GPU improved performance significantly.[88]
+
+Backpropagation is a method used to adjust the connection weights to compensate for each error 
+
+ВОПРОСЫ:
+1. В каком году была обозначена проблема взрывающихся градиентов (exploding gradients)?
+2. Кто в 1891 году разработал метод уничтожающей производной (destroying derivative)?
+3. Кто предложил цепное правило дифференцирования (chain rule of differentiation) и в каком году?
+
+Ответь в формате JSON:
+{
+    "gradient_explosion_year": "год или 'не найдено'",
+    "destroying_derivative_author": "имя или 'не найдено'",
+    "chain_rule_author": "имя или 'не найдено'",
+    "chain_rule_year": "год или 'не найдено'"
+}
